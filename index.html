@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Site de Contabilidade</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-gray-800 font-sans leading-relaxed">
+   <header>
+      <nav class="flex justify-between items-center p-4 bg-white border-b border-gray-200">
+         <div class="logo font-bold text-xl">Grupo Controles</div>
+         <ul class="flex max-sm:hidden">
+            <li class="ml-6"><a href="#servicos" class="text-gray-800 hover:text-blue-500 transition">Serviços</a>
+            </li>
+            <!-- <li class="ml-6"><a href="#sobre" class="text-gray-800 hover:text-blue-500 transition">Sobre Nós</a>
+                </li> -->
+            <!-- <li class="ml-6"><a href="#missao" class="text-gray-800 hover:text-blue-500 transition">Missão</a></li> -->
+            <li class="ml-6"><a href="#" class="text-gray-800 hover:text-blue-500 transition">Contato</a></li>
+         </ul>
+      </nav>
+      <div
+         class="h-fit flex flex-col md:flex-row items-center justify-center gap-8 bg-gradient-to-r from-blue-500 to-blue-700">
+         <div class="p-6 mx-auto text-white flex flex-col justify-start items-start mt-8 ">
+            <h1 class="text-4xl md:text-5xl mb-6 leading-tight">A segurança contábil que seu negócio precisa.</h1>
+            <p class="text-lg mb-8">Planejamento estratégico, soluções inovadoras e suporte dedicado.</p>
+         </div>
+         <div class="brightness-75 p-4 md:w-3/4">
+            <img src="public/pexels-fauxels-3184424.jpg" alt="Grupo de pessoas com as mãos dadas"
+               class="object-cover drop-shadow-lg rounded-lg ">
+         </div>
+      </div>
+   </header>
+
+
+   <section id="servicos" class="py-16 px-4 container mx-auto">
+      <div class="mb-16 text-center">
+         <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+         <p class="text-gray-600">Facilitamos a gestão contábil da sua empresa com as seguintes funcionalidades:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+         <a href="https://vip.acessorias.com/grupocontroles" target="_blank" rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow-md  p-6 hover:shadow-lg border hover:border-blue-500  transition block hover:-translate-x-2 hover:-translate-y-2">
+            <i class="fas fa-upload text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Receber e enviar documentos</h3>
+            <p class="text-gray-600 leading-relaxed">Troque documentos de forma segura e eficiente.</p>
+         </a>
+
+         <a href="https://auth.arquivei.com.br/auth/realms/saas/protocol/openid-connect/auth?approval_prompt=force&client_id=saas&redirect_uri=https%3A%2F%2Fapp.arquivei.com.br%2Foauth2%2Fcallback&response_type=code&scope=openid+profile+email&state=JAyeAQRTYvB2WL8pkDxKYW5URqoj4mwUpRx2PC-EYIo%3A%2Flogin%3F__hstc%3D91406661.ad4482ac245d79d75ffc9f8f057ae1da.1734533550931.1734533550931.1734553847049.2%26__hssc%3D91406661.2.1734553847049%26__hsfp%3D2926623495%26_gl%3D1%2Ac24wj9%2A_gcl_au%2AMTk0NDIwNjczLjE3MzQ1MzM1NDc.%2A_ga%2AMTQyNzk3OTQ4My4xNzM0NTMzNTQ4%2A_ga_FE9K6H9CVT%2AMTczNDU1Mzg0NS4yLjEuMTczNDU1MzkxMC42MC4wLjA."
+            target="_blank" rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition block border hover:border-blue-500 hover:-translate-x-2 hover:-translate-y-2">
+            <i class="fas fa-file-excel text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Baixar XMLs de sua Empresa</h3>
+            <p class="text-gray-600 leading-relaxed">Acesse seus arquivos XML de forma rápida e prática.</p>
+         </a>
+
+         <a href="https://regrasfiscais.e-auditoria.com.br/consulta/regras-fiscais" target="_blank" rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition block border hover:border-blue-500 hover:-translate-x-2 hover:-translate-y-2">
+            <i class="fas fa-balance-scale text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Regras Fiscais</h3>
+            <p class="text-gray-600 leading-relaxed">Mantenha-se atualizado com as legislações fiscais.</p>
+         </a>
+
+         <a href="https://econsulta.e-auditoria.com.br/Home/Consulta" target="_blank" rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition block border hover:border-blue-500 hover:-translate-x-2 hover:-translate-y-2">
+            <i class="fas fa-barcode text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Tributação por NCM</h3>
+            <p class="text-gray-600 leading-relaxed">Consulte a tributação correta para cada NCM.</p>
+         </a>
+
+         <a href="https://econsulta.e-auditoria.com.br/Home/SimplesNacionalPorCNAE" target="_blank" rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition block border hover:border-blue-500 hover:-translate-x-2 hover:-translate-y-2">
+            <i class="fas fa-building text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Enquadramento do Simples Nacional por CNAE</h3>
+            <p class="text-gray-600 leading-relaxed">Verifique o enquadramento ideal para sua empresa.</p>
+         </a>
+
+         <a href="https://pro.nucont.com/login" target="_blank" rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition block border hover:border-blue-500 hover:-translate-x-2 hover:-translate-y-2">
+            <i class="fas fa-chart-pie text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Acesso ao resultado de sua empresa</h3>
+            <p class="text-gray-600 leading-relaxed">Acompanhe o desempenho financeiro do seu negócio.</p>
+         </a>
+
+      </div>
+   </section>
+
+
+   <section class="py-16 px-4 container mx-auto">
+      <div class="mb-16 text-center">
+         <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre Nós</h2>
+         <p class="text-gray-600">Nossa história e compromisso com o seu sucesso.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center gap-8">
+         <img src="public/men-business.png" alt="Equipe"
+            class="max-w-sm rounded-full shadow-md size-[250px] border border-blue-500 p-1">
+         <div class="text-left md:text-left">
+            <p class="text-gray-600 leading-relaxed">Somos um escritório de contabilidade com anos de experiência,
+               comprometidos em oferecer soluções eficientes e confiáveis para nossos clientes. Nossa equipe é
+               formada por profissionais qualificados e dedicados a fornecer um atendimento personalizado e de
+               excelência.</p>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <section class="container mx-auto py-12 px-4">
+
+      <div class="mb-16 text-center">
+         <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossa Missão, Valores e Diferenciais</h2>
+         <p class="text-gray-600">Conheça o que nos guia e nos diferencia no mercado contábil.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+         <div class="bg-white rounded-lg shadow-md p-6 bg-gradient-to-t hover:from-white hover:to-blue-100 ">
+            <div class="flex items-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mr-2" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0l6-6" />
+               </svg>
+               <h3 class="text-xl font-semibold text-gray-800">Missão</h3>
+            </div>
+            <p class="text-gray-600 ">Oferecer soluções contábeis inovadoras e personalizadas, impulsionando o
+               crescimento sustentável de nossos clientes, com ética, transparência e excelência.</p>
+         </div>
+
+         <div class="bg-white rounded-lg shadow-md p-6 bg-gradient-to-t hover:from-white hover:to-blue-100">
+            <div class="flex items-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-500 mr-2" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+               </svg>
+               <h3 class="text-xl font-semibold text-gray-800">Valores</h3>
+            </div>
+            <ul class="list-disc pl-6 text-gray-600">
+               <li>Ética e Integridade</li>
+               <li>Transparência e Confiança</li>
+               <li>Comprometimento com o Cliente</li>
+               <li>Excelência e Inovação</li>
+               <li>Responsabilidade Social</li>
+            </ul>
+         </div>
+
+         <div class="bg-white rounded-lg shadow-md p-6 bg-gradient-to-t hover:from-white hover:to-blue-100">
+            <div class="flex items-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-500 mr-2" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+               </svg>
+               <h3 class="text-xl font-semibold text-gray-800">Diferenciais</h3>
+            </div>
+            <ul class="list-disc pl-6 text-gray-600">
+               <li>Atendimento Personalizado</li>
+               <li>Tecnologia de Ponta</li>
+               <li>Consultoria Proativa</li>
+               <li>Equipe Altamente Qualificada</li>
+               <li>Foco em Resultados</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <div id="feed-container"></div>
+
+
+   <footer class="bg-gray-800 text-white text-center py-6">
+      <p>&copy; Grupo Controles</p>
+   </footer>
+</body>
+<!-- <script>
+    fetch('https://www.contabeis.com.br/rss/noticias/')
+        .then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(data => {
+            const items = data.querySelectorAll("item");
+            let output = "<ul>";
+            items.forEach(item => {
+                const title = item.querySelector("title").textContent;
+                const link = item.querySelector("link").textContent;
+                const description = item.querySelector("description").textContent;
+                output += `<li><a href="${link}">${title}</a><p>${description}</p></li>`;
+            });
+            output += "</ul>";
+            document.getElementById("feed-container").innerHTML = output;
+        })
+        .catch(err => console.error("Erro ao carregar o feed:", err));
+</script> -->
+
+</html>
