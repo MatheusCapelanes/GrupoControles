@@ -180,6 +180,9 @@
    <div>
       <h2 class="text-3xl font-bold p-4 text-center">Últimas notícias</h2>
       <div class="rss grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"></div>
+
+      <h2 class="text-3xl font-bold p-4 text-center">Artigos</h2>
+      <div class="article grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"></div>
    </div>
 
 
@@ -189,6 +192,7 @@
 
    <script>
       const rss = document.querySelector('.rss');
+      const article = document.querySelector('.article')
 
       fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.contabeis.com.br/rss/conteudo/')
          .then(response => response.json())
@@ -207,6 +211,27 @@
                   </div>
                `;
                rss.appendChild(div);
+            });
+         });
+
+
+         fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.contabeis.com.br/rss/artigos/')
+         .then(response => response.json())
+         .then(data => {
+            data.items.forEach(item => {
+               const div = document.createElement('div');
+               div.innerHTML = `
+                  <div class="bg-white rounded-lg shadow-md p-6 mb-4 h-full">
+                     <a href="${item.link}" target="_blank" rel="noopener noreferrer" class='flex flex-col justify-between h-full'>
+                        <h3 class=" font-semibold text-gray-800">${item.title}</h3>
+                        <div>
+                           <img src='${item.enclosure.link}' alt='Capa da Noticia' class='my-4' >
+                           <p class="text-gray-400 text-sm">${item.categories[0]}</p>
+                        </div>
+                     </a>
+                  </div>
+               `;
+               article.appendChild(div);
             });
          });
 
