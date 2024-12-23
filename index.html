@@ -14,13 +14,10 @@
 <body class="bg-slate-50 text-gray-800 font-sans leading-relaxed">
    <header>
       <nav class="flex justify-between items-center p-4 bg-white border-b border-gray-200">
-         <div class="logo font-bold text-xl">Grupo Controles</div>
+         <img src="public/logo.png" alt="Logo Grupo Controles" width="100" class="">
          <ul class="flex max-sm:hidden">
             <li class="ml-6"><a href="#servicos" class="text-gray-800 hover:text-blue-500 transition">Serviços</a>
             </li>
-            <!-- <li class="ml-6"><a href="#sobre" class="text-gray-800 hover:text-blue-500 transition">Sobre Nós</a>
-                </li> -->
-            <!-- <li class="ml-6"><a href="#missao" class="text-gray-800 hover:text-blue-500 transition">Missão</a></li> -->
             <li class="ml-6"><a href="#" class="text-gray-800 hover:text-blue-500 transition">Contato</a></li>
          </ul>
       </nav>
@@ -101,8 +98,8 @@
          <p class="text-gray-600">Nossa história e compromisso com o seu sucesso.</p>
       </div>
       <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center gap-8">
-         <img src="public/men-business.png" alt="Equipe"
-            class="max-w-sm rounded-full shadow-md size-[250px] border border-blue-500 p-1">
+         <img src="public/perfil.jpg" alt="Equipe" width="200" height="150"
+            class="max-w-sm rounded-full shadow-md border border-blue-500 p-1 hover:shadow-lg">
          <div class="text-left md:text-left">
             <p class="text-gray-600 leading-relaxed">Somos um escritório de contabilidade com anos de experiência,
                comprometidos em oferecer soluções eficientes e confiáveis para nossos clientes. Nossa equipe é
@@ -175,8 +172,6 @@
       </div>
    </section>
 
-   <!-- <iframe class="rss" src="https://www.contabeis.com.br/rss/noticias/" comp-type="feed" width="400" height="600"></iframe> -->
-
    <div>
       <h2 class="text-3xl font-bold p-4 text-center">Últimas notícias</h2>
       <div class="rss grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"></div>
@@ -215,7 +210,7 @@
          });
 
 
-         fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.contabeis.com.br/rss/artigos/')
+      fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.contabeis.com.br/rss/artigos/')
          .then(response => response.json())
          .then(data => {
             data.items.forEach(item => {
